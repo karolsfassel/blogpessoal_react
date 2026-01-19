@@ -5,3 +5,4 @@ export default interface Tema{
     descricao:string,
     postagem?: Postagem[]| null;
 }
+

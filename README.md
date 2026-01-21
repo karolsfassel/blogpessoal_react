@@ -6,6 +6,7 @@
 4. **axios** → integração com API utilizando Axios  
 5. **contextAPI** → gerenciamento de estado global com Context API
 6. **crud-tema** → criação do crud tema
+7. **crud-postagem** → criação do crud postagem
 
 
 ---

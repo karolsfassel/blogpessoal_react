@@ -1,10 +1,18 @@
 import { FacebookLogoIcon,  InstagramLogoIcon, LinkedinLogoIcon } from '@phosphor-icons/react'
+import { AuthContext } from '../../contexts/AuthContext'
+import { useContext, type ReactNode } from 'react'
 
 function Footer(){
     let data = new Date().getFullYear()
 
-    return(
-        <>
+    const {usuario} = useContext(AuthContext)
+
+    let component:ReactNode 
+
+    if(usuario.token !== ""){
+        component =(
+    
+    
         <div className ='flex justify-center  text-white
        bg-gradient-to-r from-sky-400 via-sky-300 to-pink-400 '
         >
@@ -27,8 +35,13 @@ function Footer(){
                 </div>
             </div>
         </div>
-        </>
-    )
+        )    
+}
+return(
+    <>
+    {component}
+    </>
+)
 }
 
 export default Footer

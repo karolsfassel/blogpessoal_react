@@ -1,40 +1,28 @@
-
+import ListaPostagens from "../../components/postagem/listapostagens/ListaPostagens";
+import ModalPostagem from "../../components/postagem/modalpostagem/ModalPostagem";
 
 function Home() {
   return (
     <>
-      <main>
-        <section style={{
-            display:"grid",
-            gridTemplateColumns:"1fr 1fr",
-            backgroundColor:"#29165c"
- 
-        }}>
-          <article style={{
-            display:"flex",
-            flexDirection:"column",
-            alignItems:"center",
-            justifyContent:"center",
-            color:"white"
-          }}>
-             <h1 style={{
-                fontSize:"5vw",
-             }}>Seja Bem Vindo!</h1>
-             <p>Expresse aqui seus pensamentos e opiniões</p>
-             <button style={{
-                border:"1rem",
-                borderRadius:"5px",
-                padding:"0.5rem",
-             }}>
-                Nova Postagem
-                </button>
+      <main className=" bg-sky-300 flex justify-center">
+        <section className="container grid grid-cols-2 text-white">
+          <article className="flex flex-col gap-4 items-center justify-center py-4">
+             <h1 className="text-5xl font-bold text-sky-700">Seja Bem Vindo!</h1>
+             <p className='text-x1'>Expresse aqui seus pensamentos e opiniões</p>
+             <div className='fleex justify-around gap-4'>
+              
+               <ModalPostagem />
+               
+            </div>
           </article>
-          <figure>
-            <img src="https://i.imgur.com/fyfri1v.png" alt="" width={"100%"}/>
+          <figure className="flex justify-center">
+            <img src="https://i.imgur.com/hMRcmiy.png" alt="imagem Pagina Home" className="w-2/3"/>
           </figure>
         </section>
       </main>
+       <ListaPostagens />
     </>
   );
 }
-export default Home; 
+export default Home;
+ 

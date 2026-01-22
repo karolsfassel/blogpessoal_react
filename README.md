@@ -7,8 +7,7 @@
 5. **contextAPI** → gerenciamento de estado global com Context API
 6. **crud-tema** → criação do crud tema
 7. **crud-postagem** → criação do crud postagem
-
-
+8. **userEtoastify** → implementação do perfil do Usuário e biblioteca React-toastify
 ---
 
 # React + TypeScript + Vite
